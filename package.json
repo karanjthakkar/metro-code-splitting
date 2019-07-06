@@ -1,0 +1,27 @@
+{
+  "name": "@geekykaran/metro-code-splitting",
+  "version": "1.0.0",
+  "description": "Generate split bundles using dynamic imports for metro",
+  "bin": {
+    "bundle-split": "cli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karanjthakkar/metro-code-splitting.git"
+  },
+  "keywords": ["metro", "react-native", "code-splitting"],
+  "author": "Karan Thakkar <karanjthakkar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karanjthakkar/metro-code-splitting/issues"
+  },
+  "homepage": "https://github.com/karanjthakkar/metro-code-splitting#readme",
+  "dependencies": {
+    "@react-native-community/cli": "^2.1.0",
+    "yargs": "^13.2.4"
+  }
+}

@@ -12,12 +12,13 @@ const serializeGraph = require('./serializeGraph');
 const generateOutput = require('./generateOutput');
 
 const run = async args => {
+  const dev = args.dev || false;
   const config = await loadMetroConfig(loadConfig());
   const requestOpts = {
-    dev: args.dev,
+    dev: dev,
     entryFile: path.resolve(args.entryFile),
     platform: args.platform,
-    minify: !args.dev,
+    minify: !dev,
   };
   const options = {
     ...Server.DEFAULT_BUNDLE_OPTIONS,

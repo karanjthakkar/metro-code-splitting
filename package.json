@@ -1,6 +1,6 @@
 {
   "name": "@geekykaran/metro-code-splitting",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate split bundles using dynamic imports for metro",
   "bin": {
     "bundle-split": "cli.js"

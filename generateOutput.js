@@ -5,7 +5,7 @@ const sourceMapString = require('metro/src/DeltaBundler/Serializers/sourceMapStr
 
 const generateOutput = async ({
   entryFile,
-  bundleOutDir,
+  bundleOutputDir,
   createModuleId,
   bundle,
   prependInner,
@@ -15,8 +15,8 @@ const generateOutput = async ({
 }) => {
   const fileName = path.basename(entryFile, '.js');
   const outputOpts = {
-    bundleOutput: `${bundleOutDir}/${fileName}.jsbundle`,
-    sourceMapOutput: `${bundleOutDir}/${fileName}.jsbundle.map`,
+    bundleOutput: `${bundleOutputDir}/${fileName}.jsbundle`,
+    sourceMapOutput: `${bundleOutputDir}/${fileName}.jsbundle.map`,
     bundleEncoding: 'utf8',
   };
 

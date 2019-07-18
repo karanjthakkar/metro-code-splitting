@@ -61,7 +61,7 @@ const run = async args => {
     // Write output to disk
     await generateOutput({
       entryFile,
-      bundleOutDir: args.bundleOutDir,
+      bundleOutputDir: args.bundleOutputDir,
       createModuleId,
       bundle,
       prependInner,
